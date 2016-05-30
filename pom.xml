@@ -13,6 +13,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring.boot.version>1.3.0.RELEASE</spring.boot.version>
         <test.version>1.0.0-SNAPSHOT</test.version>
+        <memcache.version>2.8.2</memcache.version>
     </properties>
 
     <scm>
@@ -252,6 +253,13 @@
                     <artifactId>spring-boot-starter-logging</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+
+        <!-- Mem cache -->
+        <dependency>
+            <groupId>net.sf.ehcache</groupId>
+            <artifactId>ehcache</artifactId>
+            <version>${memcache.version}</version>
         </dependency>
     </dependencies>
 </project>
